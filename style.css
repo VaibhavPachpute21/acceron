@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap');
+
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Jost", sans-serif;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .form-inline .form-control {
+      width: 210px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .form-inline .form-control {
+      width: 440px;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .form-inline .form-control {
+      width: 600px;
+    }
+  }
+    
+  .navbar .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-light .navbar-toggler:focus {
+    outline: none;
+  }
+  
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .main-menu {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .sub-menu {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .sub-menu {
+      padding: 0 1rem;
+    }
+  
+    .sub-menu.navbar-expand-md .navbar-nav .nav-link {
+      padding: 1rem 1.5rem;
+    }
+  }
+  
+  .navbar.bg-light {
+    background: #fff !important;
+  }
+  
+  #sidebar {
+    background: #fff;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    position: fixed;
+    transition: 0.4s ease-in-out;
+    width: 84%;
+    z-index: 5001;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem 1rem 1rem;
+  }
+  
+  #sidebar.active {
+    left: 0;
+  }
+  
+  #sidebar .sidebar-header {
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 1.5rem;
+  }
+  
+  #sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 40px;
+  }
+  
+  #sidebar ul p {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #sidebar ul li a {
+    padding: 10px 16px;
+    font-size: 1.1em;
+    display: block;
+    color: #000;
+  }
+  
+  #sidebar ul li a:hover {
+    color: #7386d5;
+    background: #fff;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    width: 100%;
+    opacity: 0;
+  }
+  
+  .overlay.visible {
+    opacity: 1;
+    z-index: 5000;
+  }
+
+  .utility-nav {
+    background: #0e7862;
+    padding: 0.5rem 1rem;
+  }
+  
+  .utility-nav p {
+    margin-bottom: 0;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: #000;
+  }
+
+.fa {
+    padding: 14px;
+    font-size: 12px;
+    width: -1px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 5px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+
+.nav-tabs .nav-link.active {
+    color: var(--bs-nav-tabs-link-active-color);
+    background-color: var(--bs-dark-border-subtle);
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+    border: 1px solid var(--bs-form-valid-color);
+    border-radius: 0px;
+}
+
+.nav-tabs .nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-dark-border-subtle);
+    text-decoration: none;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    background-color: var(--bs-border-color);
+    border-radius: 0px !important;
+    margin: 2px 5px;
+}
+
+.myheading::before,
+.myheading::after {
+    display: inline-block;
+    content: "";
+    border-bottom: .1rem solid black;
+    width: 3rem;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+footer .fa {
+    padding: 14px;
+    font-size: 12px;
+    width: -1px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.heading1 {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+}
+
+.textStyle1 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #555555;
+    font-family: "Jost", sans-serif;
+}
+
+.textStyle2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    font-family: "Jost", sans-serif;
+}
+
+.textStyle3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Jost", sans-serif;
+}
+
+.textStyle4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Jost", sans-serif;
+}
+
+.textStyle5 {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #888888;
+    font-family: "Jost", sans-serif;
+}
+
+.description-text {
+    font-size: 18px;
+    color: #888888;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+
+.btn-outline-dark {
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+footer{
+    background-color: #0c7b64;
+}
+
+footer a,footer p {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
